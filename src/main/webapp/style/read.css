@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,600,700&display=swap');
+
+/* General body and background */
+body {
+    font-family: 'Lora', serif;
+    background: #F2F1EB;
+    color: #2D5C4D;
+    margin: 0;
+    padding: 0;
+}
+
+/* Blurred background image for feedback section */
+.feedback-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 0 60px 0;
+    background: transparent;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.feedback-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../images/feedback.jpg') center center/cover no-repeat;
+    filter: blur(7px) brightness(0.8);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Ensure content is above the blurred background */
+.feedback-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Feedback Title */
+.feedback-title {
+    color: #2D5C4D;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+}
+
+/* Feedback Grid */
+.feedback-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+}
+
+/* Feedback Card */
+.feedback-card {
+    background: #F2F1EB;
+    border-radius: 1.25rem;
+    box-shadow: 0 6px 24px rgba(45, 92, 77, 0.10);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    min-width: 320px;
+    max-width: 390px;
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+    font-family: 'Lora', serif;
+    border: none;
+}
+
+.feedback-card:hover {
+    box-shadow: 0 10px 36px rgba(45, 92, 77, 0.15);
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.feedback-name {
+    color: #2D5C4D;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.feedback-id {
+    color: #2D5C4D;
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
+
+.feedback-email {
+    color: #2D5C4D;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-family: 'Lora', serif;
+}
+
+.feedback-content {
+    color: #2D5C4D;
+    font-size: 1.07rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 1rem;
+    min-height: 60px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+/* Star Rating */
+.feedback-rating {
+    margin-bottom: 1rem;
+}
+.feedback-rating .star {
+    color: #2D5C4D;
+    font-size: 1.2rem;
+    margin-right: 2px;
+}
+.feedback-rating .star.inactive {
+    color: #ccc;
+}
+
+/* Feedback Actions */
+.feedback-actions {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: auto;
+}
+
+.btn-update, .btn-delete {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    border-radius: 0.7rem;
+    padding: 0.4rem 1.1rem;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.btn-update {
+    background: #2D5C4D;
+    color: #fff;
+}
+
+.btn-update:hover {
+    background: #1b3b31;
+    color: #fff;
+}
+
+.btn-delete {
+    background: #fff;
+    color: #2D5C4D;
+    border: 1.5px solid #2D5C4D;
+}
+
+.btn-delete:hover {
+    background: #2D5C4D;
+    color: #fff;
+}
+
+/* No Feedback Message */
+.no-feedback {
+    background: #fff;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    color: #2D5C4D;
+    font-family: 'Lora', serif;
+    box-shadow: 0 4px 24px rgba(45,92,77,0.08);
+    margin: 2rem auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991px) {
+    .feedback-grid {
+        gap: 1.2rem;
+    }
+    .feedback-card {
+        min-width: 260px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .feedback-title {
+        font-size: 1.5rem;
+    }
+    .feedback-grid {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .feedback-card {
+        min-width: 90vw;
+        max-width: 98vw;
+        padding: 1.2rem 1rem;
+    }
+}

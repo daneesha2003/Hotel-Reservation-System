@@ -1,0 +1,122 @@
+/* Main Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F1EB;
+    color: #333;
+}
+
+/* Header with logout button */
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D5C4D;
+    padding: 15px 30px;
+    color: white;
+}
+
+.account-header h2 {
+    margin: 0;
+    color: white;
+}
+
+.logout-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Account details container */
+.account-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-details p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.account-details strong {
+    color: #2D5C4D;
+    min-width: 120px;
+    display: inline-block;
+}
+
+/* Button styles */
+.action-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.btn-edit {
+    background-color: #2D5C4D;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #24493d;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #bb2d3b;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .account-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .account-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    .logout-btn {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}

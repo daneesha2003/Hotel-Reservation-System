@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
+body {
+  font-family: 'Lora', serif;
+}
+ .pro-user-account-image {
+		  width: 50px;
+		  height: 50px;
+		  border-radius: 50%;
+		  border: 2px solid gold; /* Indicates pro status */
+		  overflow: hidden;
+		}
+
+		.pro-user-account-image img {
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this to match the logo width and maintain balance */
+.logo-placeholder {
+    width: 50px; /* Should match your logo width */
+    visibility: hidden;
+}
+
+/* Update the navlinks styling */
+.navilinks {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Rest of your existing navbar CSS remains the same */
+#navilogo{
+    width: 50px;
+}
+
+.navilinks li {
+    display: inline;
+}
+
+.navilinks a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+.navilinks a:hover {
+    color:#2D5C4D;
+}
+
+.sign-buttons a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.login-btn {
+  color: #000000;
+}
+
+.signup-btn {
+  padding: 10px 15px;
+  background-color: #2D5C4D;
+  color: white;
+  border-radius: 5px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 0 0 0;
+  font-family: 'Lora', serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 20px;
+  min-width: 180px;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-right: 80px; 
+}
+
+.footer-logo {
+  width: auto;
+  height: 300px; /* Control logo height here */
+  margin-bottom: 10px; 
+  margin-top: 20px; 
+  display: block;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li a i {
+  color: #000000;
+  font-size: 24px;
+}
+
+.social-icons li a i:hover {
+  color: #2D5C4D;
+}
+
+.footer-section.subscribe form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.footer-section.subscribe input[type="email"] {
+  padding: 8px 20px; 
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px; 
+  width: auto; 
+  flex: 1; 
+  max-width: 100%; 
+  font-family: 'Lora', serif;
+}
+
+.btn {
+  background-color: #2D5C4D; 
+  color: white; 
+  border: none; 
+  padding: 8px 20px; 
+  border-radius: 5px; 
+  font-size: 14px; 
+  cursor: pointer; 
+  display: inline-block; 
+  text-align: center; 
+  margin-left: 5px; 
+  font-family: 'Lora', serif;
+}
+
+.app-buttons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.app-buttons img {
+  height: 40px;    /* Set the desired height for app icons */
+  width: auto;     /* Maintain aspect ratio */
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+/* Language and currency selectors */
+select {
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  border: 1px solid #ddd; 
+  font-size: 14px; 
+  background-color: #fff; 
+  color: #000; 
+  width: auto; 
+  max-width: 100%; 
+  font-family: 'Lora', serif;
+  margin: 0 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  background-color: #235243;
+  padding: 20px 0;
+  color: #000000;
+  font-family: 'Lora', serif;
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .footer-section {
+    min-width: 0;
+    margin-right: 0;
+  }
+}

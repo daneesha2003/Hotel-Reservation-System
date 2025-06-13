@@ -1,0 +1,189 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lora', serif;
+    background-size: cover;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/resback6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.reservation-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.reservation-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.reservation-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.reservation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.reservation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.reservation-header h3 {
+    color: #2D5C4D;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.update-btn, .delete-btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.update-btn {
+    background-color: #2D5C4D;
+    color: white;
+    border: 1px solid #2D5C4D;
+}
+
+.update-btn:hover {
+    background-color: white;
+    color: #2D5C4D;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: white;
+    color: #dc3545;
+}
+
+.reservation-details {
+    margin-top: 20px;
+}
+
+.detail-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.detail-row-full {
+    margin-top: 20px;
+}
+
+.detail-column {
+    flex: 1;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #2D5C4D;
+    display: inline-block;
+    width: 120px;
+}
+
+.detail-value {
+    color: #555;
+}
+
+.checkout-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.checkout-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #2D5C4D;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(45, 92, 77, 0.3);
+}
+
+.checkout-btn:hover {
+    background-color: #1e4a3d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(45, 92, 77, 0.4);
+}
+
+.checkout-btn i {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .detail-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .reservation-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .checkout-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
