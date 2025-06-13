@@ -1,0 +1,138 @@
+@charset "UTF-8";
+body {
+    font-family: 'Lora', serif;
+    background: #F2F1EB;
+    margin: 0;
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #2D5C4D;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+    font-size: 2.2rem;
+}
+
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px rgba(45,92,77,0.08);
+    padding: 32px 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    font-size: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(45,92,77,0.06);
+}
+
+th, td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid #E0E0E0;
+    vertical-align: middle;
+}
+
+th {
+    background: #2D5C4D;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    border-top: none;
+    border-bottom: 2px solid #235243;
+}
+
+tr:nth-child(even) td {
+    background: #F7FAF9;
+}
+
+tr:hover td {
+    background: #EAF4F1;
+    transition: background 0.2s;
+}
+
+td:last-child {
+    min-width: 180px;
+}
+
+button {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    padding: 7px 18px;
+    border: none;
+    border-radius: 4px;
+    margin: 2px 4px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    font-weight: 600;
+}
+
+a button {
+    background: #2D5C4D;
+    color: #fff;
+    border: 1px solid #2D5C4D;
+}
+a button:hover {
+    background: #235243;
+    border-color: #235243;
+}
+
+form button {
+    background: #f07167;
+    color: #fff;
+    border: 1px solid #f07167;
+}
+form button:hover {
+    background: #c95c4d;
+    border-color: #c95c4d;
+}
+
+@media (max-width: 900px) {
+    .table-container {
+        padding: 10px;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        display: none;
+    }
+    tr {
+        margin-bottom: 18px;
+        border-radius: 8px;
+        box-shadow: 0 1px 5px rgba(45,92,77,0.08);
+        background: #fff;
+    }
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        min-height: 40px;
+    }
+    td:before {
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #2D5C4D;
+    }
+    td:nth-of-type(1):before { content: "ID"; }
+    td:nth-of-type(2):before { content: "First Name"; }
+    td:nth-of-type(3):before { content: "Last Name"; }
+    td:nth-of-type(4):before { content: "Email"; }
+    td:nth-of-type(5):before { content: "Phone Number"; }
+    td:nth-of-type(6):before { content: "Message"; }
+    td:nth-of-type(7):before { content: "Action"; }
+}

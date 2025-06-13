@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #F2F1EB;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: #fff;
+    padding: 32px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(45, 92, 77, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #2D5C4D;
+    font-weight: 700;
+    margin-bottom: 28px;
+    font-size: 2rem;
+}
+
+.update-form table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
+
+.update-form td {
+    vertical-align: middle;
+}
+
+.update-form td:first-child {
+    width: 35%;
+    padding-right: 20px;
+    font-weight: 600;
+    color: #444;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.update-form td:last-child {
+    width: 65%;
+}
+
+.update-form input[type="text"],
+.update-form input[type="email"],
+.update-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.update-form input[type="text"]:focus,
+.update-form input[type="email"]:focus,
+.update-form textarea:focus {
+    border-color: #2D5C4D;
+    outline: none;
+}
+
+.update-form textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: 'Lora', serif;
+}
+
+.submit-cell {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.submit-btn {
+    background-color: #2D5C4D;
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    font-family: 'Lora', serif;
+}
+
+.submit-btn:hover {
+    background-color: #235243;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 24px 20px;
+    }
+    .update-form td:first-child {
+        text-align: left;
+        padding-right: 0;
+        width: 100%;
+        padding-bottom: 6px;
+    }
+    .update-form td:last-child {
+        width: 100%;
+    }
+    .update-form table {
+        border-spacing: 0 12px;
+    }
+}

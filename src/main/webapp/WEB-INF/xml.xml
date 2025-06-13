@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+     <servlet>
+     	<servlet-name>InsertReservationServlet</servlet-name>
+     	<servlet-class>ReservationPackage.InsertReservationServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>InsertReservationServlet</servlet-name>
+     	<url-pattern>/InsertReservationServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>ReservationGetServlet</servlet-name>
+     	<servlet-class>ReservationPackage.ReservationGetServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ReservationGetServlet</servlet-name>
+     	<url-pattern>/ReservationGetServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>UpdateReservationServlet</servlet-name>
+     	<servlet-class>ReservationPackage.UpdateReservationServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateReservationServlet</servlet-name>
+     	<url-pattern>/UpdateReservationServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>DeleteReservationServlet</servlet-name>
+     	<servlet-class>ReservationPackage.DeleteReservationServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteReservationServlet</servlet-name>
+     	<url-pattern>/DeleteReservationServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>CaclculateBillServlet</servlet-name>
+     	<servlet-class>ReservationPackage.CaclculateBillServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>CaclculateBillServlet</servlet-name>
+     	<url-pattern>/CaclculateBillServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+     	<servlet-name>InsertHotelAddServlet</servlet-name>
+     	<servlet-class>AdminDashboard.InsertHotelAddServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>InsertHotelAddServlet</servlet-name>
+     	<url-pattern>/InsertHotelAddServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>HotelAddGetServlet</servlet-name>
+     	<servlet-class>AdminDashboard.HotelAddGetServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>HotelAddGetServlet</servlet-name>
+     	<url-pattern>/HotelAddGetServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>UpdateHotelAddServlet</servlet-name>
+     	<servlet-class>AdminDashboard.UpdateHotelAddServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateHotelAddServlet</servlet-name>
+     	<url-pattern>/UpdateHotelAddServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>DeleteHotelAddServlet</servlet-name>
+     	<servlet-class>AdminDashboard.DeleteHotelAddServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteHotelAddServlet</servlet-name>
+     	<url-pattern>/DeleteHotelAddServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+     	<servlet-name>DisplayStayServlet</servlet-name>
+     	<servlet-class>staysPackage.DisplayStayServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DisplayStayServlet</servlet-name>
+     	<url-pattern>/DisplayStayServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>TestDBServlet</servlet-name>
+     	<servlet-class>staysPackage.TestDBServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>TestDBServlet</servlet-name>
+     	<url-pattern>/TestDBServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<servlet-class>UserPackage.LoginServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<url-pattern>/LoginServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>LogoutServlet</servlet-name>
+     	<servlet-class>UserPackage.LogoutServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>LogoutServlet</servlet-name>
+     	<url-pattern>/LogoutServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>SignupServlet</servlet-name>
+     	<servlet-class>UserPackage.SignupServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>SignupServlet</servlet-name>
+     	<url-pattern>/SignupServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>UpdateUseraccServlet</servlet-name>
+     	<servlet-class>UserPackage.UpdateUseraccServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateUseraccServlet</servlet-name>
+     	<url-pattern>/UpdateUseraccServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>UseraccServlet</servlet-name>
+     	<servlet-class>UserPackage.UseraccServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UseraccServlet</servlet-name>
+     	<url-pattern>/UseraccServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>ConnectusInsert</servlet-name>
+     	<servlet-class>ContactusPackage.ConnectusInsert</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ConnectusInsert</servlet-name>
+     	<url-pattern>/ConnectusInsert</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>DisplayContactus</servlet-name>
+     	<servlet-class>ContactusPackage.DisplayContactus</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DisplayContactus</servlet-name>
+     	<url-pattern>/DisplayContactus</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>UpdateContactusServlet</servlet-name>
+     	<servlet-class>ContactusPackage.UpdateContactusServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateContactusServlet</servlet-name>
+     	<url-pattern>/UpdateContactusServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>DeleteContactusServlet</servlet-name>
+     	<servlet-class>ContactusPackage.DeleteContactusServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteContactusServlet</servlet-name>
+     	<url-pattern>/DeleteContactusServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+     	<servlet-name>DeleteFeedbackServlet</servlet-name>
+     	<servlet-class>FeedbackPackage.DeleteFeedbackServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteFeedbackServlet</servlet-name>
+     	<url-pattern>/DeleteFeedbackServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>FeedbackGetAll</servlet-name>
+     	<servlet-class>FeedbackPackage.FeedbackGetAll</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>FeedbackGetAll</servlet-name>
+     	<url-pattern>/FeedbackGetAll</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>FeedbackServlet</servlet-name>
+     	<servlet-class>FeedbackPackage.FeedbackServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>FeedbackServlet</servlet-name>
+     	<url-pattern>/FeedbackServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>UpdateFeedbackServlet</servlet-name>
+     	<servlet-class>FeedbackPackage.UpdateFeedbackServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateFeedbackServlet</servlet-name>
+     	<url-pattern>/UpdateFeedbackServlet</url-pattern>
+     </servlet-mapping>
+     
+
+</web-app>
