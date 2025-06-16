@@ -1,1 +1,1 @@
-# Hotel-Reservation-System
+This project is a complete Online Hotel Reservation System website. Currently, only the Feedback page has been developed and integrated, allowing users to submit their reviews and ratings. The project uses HTML, CSS, JavaScript, and Java technologies.
